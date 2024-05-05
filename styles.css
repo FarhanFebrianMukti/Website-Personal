@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+/* CSS untuk tombol edit */
+.edit-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 2px 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+/* CSS untuk tabel daftar belanja */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f2f2f2;
+}
+
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #4CAF50; /* Green */
+}
+
+.delete-btn {
+    background-color: #f44336; /* Red */
+}
+
+/* Tampilan untuk laptop/PC */
+@media (min-width: 768px) {
+    .table-belanja {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Tampilan untuk tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+    .table-belanja {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Tampilan untuk HP/smartphone */
+@media (max-width: 480px) {
+    .table-belanja {
+        width: 100%;
+    }
+}
